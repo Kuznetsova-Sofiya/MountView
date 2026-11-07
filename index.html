@@ -9,90 +9,90 @@
 <body>
     <main>
         <!-- hero-section -->
-        <section class="hero-section">
+        <section class="hero-section" id="hero">
             <div class="container">
-                <div class = "hero-wrapper">
+                <div class="hero-wrapper">
                 
                     <header class="hero-header">
                         <a class="hero-header__logo" href="index.html">
                             <img src="./images/logo.svg" alt="Логотип Mount View">
                         </a>
                         <nav class="hero-nav">
-                            <ul class="hero-nav__lists">
-                                <li class="hero-nav__item"><a href="#" class="hero-nav__link">Главная</a></li>
-                                <li class="hero-nav__item"><a href="#" class="hero-nav__link">Туры</a></li>
-                                <li class="hero-nav__item"><a href="#" class="hero-nav__link">Отзывы</a></li>
-                                <li class="hero-nav__item"><a href="#" class="hero-nav__link">Бронирование</a></li>
-                                <li class="hero-nav__item"><a href="#" class="hero-nav__link">Контакты</a></li>
+                            <ul class="hero-nav__list">
+                                <li class="hero-nav__item"><a href="#hero" class="hero-nav__link">Главная</a></li>
+                                <li class="hero-nav__item"><a href="#tours" class="hero-nav__link">Туры</a></li>
+                                <li class="hero-nav__item"><a href="#reviews" class="hero-nav__link">Отзывы</a></li>
+                                <li class="hero-nav__item"><a href="#booking" class="hero-nav__link">Бронирование</a></li>
+                                <li class="hero-nav__item"><a href="#contacts" class="hero-nav__link">Контакты</a></li>
                             </ul>
                         </nav>
                         <div class="hero-header__actions">
-                            <button>
+                            <a class="hero-header__btn">
                                 Забронировать сейчас
                                 <span class="btn__icon" aria-hidden="true"><!-- стрелка SVG --></span>
-                            </button>
+                            </a>
                         </div>
                     </header>
 
-                    <div class="hero-title"> <!-- hero-title-block -->
+                    <div class="hero-title">
                         <h1>
                             Незабываемый рассвет<br> на горе Бромо
                         </h1>
                     </div>
 
-                    <div class="hero-cards"> <!-- hero-content -->
-                        <div class="info-card__social"> <!-- hero-card__social -->
+                    <div class="hero-cards">
+                        <div class="hero-card__social">
                             <div class="avatar-list">
-                                <img src="./images/avatar1.png" alt="Аватар пользователя" class="avatar">
-                                <img src="./images/avatar2.png" alt="Аватар пользователя" class="avatar">
-                                <img src="./images/avatar3.png" alt="Аватар пользователя" class="avatar">
+                                <img src="./images/avatar1.png" alt="Аватар пользователя" class="avatar-list__item">
+                                <img src="./images/avatar2.png" alt="Аватар пользователя" class="avatar-list__item">
+                                <img src="./images/avatar3.png" alt="Аватар пользователя" class="avatar-list__item">
                                 <span class="avatar-list__count">50+</span>
                             </div>
-                            <span class="info-card__social-text">Человек присоединилось</span>
-                            <p class="info-card__description">
-                                Отправляйтесь в путешествие среди вулканических пейзажей и золотистых небес, наслаждаясь красотой, неподвластной времени...
+                            <span class="hero-card__social-text">Человек присоединилось</span>
+                            <p class="hero-card__social-description">
+                                Отправляйтесь в путешествие среди вулканических пейзажей и золотистых небес, наслаждаясь красотой, неподвластной времени, в рамках профессионально организованных туров на вулкан Бромо.
                             </p>
-                            <button class="">
+                            <a class="hero-card__btn">
                                 Забронировать сейчас
-                                <span></span>
-                            </button>
+                                <span class="btn__icon" aria-hidden="true"><!-- стрелка SVG --></span>
+                            </a>
                         </div>
                     
-                        <div class="info-card__details">
-                            <h2 class="details-card__title">Детали тура</h2>
+                        <div class="hero-card__details">
+                            <h2 class="hero-card__details-title">Детали тура</h2>
                             
-                            <ul class="details-list"> <!--details-param-->
+                            <ul class="details-list">
                                 
-                                <li class="details-list__item"><!--details-param__item-->
-                                <div class="details-list__icon"><!-- SVG иконка --></div>
-                                <div class="details-list__text">
-                                    <span class="details-list__label">Длительность</span><!--?????-->
-                                    <span class="details-list__value">5 дней</span>
-                                </div>
+                                <li class="details-list__item">
+                                    <div class="details-list__icon"><!-- SVG иконка --></div>
+                                    <div class="details-list__text">
+                                        <span class="details-list__label">Длительность</span>
+                                        <span class="details-list__value">5 дней</span>
+                                    </div>
                                 </li>
 
                                 <li class="details-list__item">
-                                <div class="details-list__icon"><!-- SVG иконка --></div>
-                                <div class="details-list__text">
-                                    <span class="details-list__label">Уровень</span>
-                                    <span class="details-list__value">Лёгкий</span>
-                                </div>
+                                    <div class="details-list__icon"><!-- SVG иконка --></div>
+                                    <div class="details-list__text">
+                                        <span class="details-list__label">Уровень</span>
+                                        <span class="details-list__value">Лёгкий</span>
+                                    </div>
                                 </li>
 
                                 <li class="details-list__item">
-                                <div class="details-list__icon"><!-- SVG иконка --></div>
-                                <div class="details-list__text">
-                                    <span class="details-list__label">Группа</span>
-                                    <span class="details-list__value">12 человек</span>
-                                </div>
+                                    <div class="details-list__icon"><!-- SVG иконка --></div>
+                                    <div class="details-list__text">
+                                        <span class="details-list__label">Группа</span>
+                                        <span class="details-list__value">12 человек</span>
+                                    </div>
                                 </li>
 
                                 <li class="details-list__item">
-                                <div class="details-list__icon"><!-- SVG иконка --></div>
-                                <div class="details-list__text">
-                                    <span class="details-list__label">Цена</span>
-                                    <span class="details-list__value">от 2 000$</span>
-                                </div>
+                                    <div class="details-list__icon"><!-- SVG иконка --></div>
+                                    <div class="details-list__text">
+                                        <span class="details-list__label">Цена</span>
+                                        <span class="details-list__value">от 2 000$</span>
+                                    </div>
                                 </li>
 
                             </ul>
@@ -103,7 +103,7 @@
         </section>
         
         <!-- tours-section -->
-        <section class="tours-section">
+        <section class="tours-section" id="tours">
             <div class="container">
                 <div class="tours__header">
                     <h2 class="tours__title">Наши туры</h2>
@@ -115,31 +115,31 @@
                 <div class="tours__cards">
 
                     <div class="tours-card">
-                        <img class="tours-card__img" src="./images/img2" alt="Фото достопримечательности">
-                        <div class="tours-card__level"> <!--Возможно с изображением стоит через гриды-->
-                            <p class="tours-card__days">5 дней</p> <!--time, dates-->
+                        <img class="tours-card__img" src="./images/img2.jpg" alt="Фото достопримечательности">
+                        <div class="tours-card__level">
+                            <p class="tours-card__days">5 дней</p>
                             <p class="tours-card__difficulty">Лёгкий</p>
                         </div> 
                         <div class="tours-card__content">
                             <h3 class="tours-card__title">Рассвет на Бромо</h3>
                             <p class="tours-card__description">Самый популярный маршрут. Наблюдайте, как первые лучи солнца освещают марсианский пейзаж кальдеры Бромо.</p>
-                            <div class="tours-card__specifications"> <!--tours-card__stat--><!--tours-card__footer-->
-                                <div class="tours__stat-item">
-                                    <p class="tours-card__label">Цена</p>  
-                                    <p class="tours-card__price">от 2000$</p>
+                            <div class="tours-card__footer">
+                                <div class="tours-card__price">
+                                    <p class="tours-card__price-label">Цена</p>  
+                                    <p class="tours-card__price-value">от 2000$</p>
                                 </div>
-                                <div class="tours-header__actions"><!--<div class="tours-card__actions">-->
-                                    <button class="tours-card__button"> 
+                                <div class="tours-card__actions">
+                                    <a class="tours-card__button"> 
                                         Подробнее
-                                        <span class="btn__icon" aria-hidden="true"><!-- стрелка SVG --></span>
-                                    </button>
+                                        <span class="tours-card__button-icon" aria-hidden="true"><!-- стрелка SVG --></span> <!--  т.к. стрелки то другие-->
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="tours-card">
-                        <img class="tours-card__img" src="./images/img3" alt="Фото достопримечательности">
+                        <img class="tours-card__img" src="./images/img3.jpg" alt="Фото достопримечательности">
                         <div class="tours-card__level">
                             <p class="tours-card__days">7 дней</p>
                             <p class="tours-card__difficulty">Сложный</p>
@@ -147,23 +147,23 @@
                         <div class="tours-card__content">
                             <h3 class="tours-card__title">Треккинг на Ринджани</h3>
                             <p class="tours-card__description">Серьезное испытание для настоящих искателей приключений. Подъем на вершину с видом на озеро Сегара Анак.</p>
-                            <div class="tours-card__specifications">
-                                <div class="tours__stat-item">
-                                    <p class="tours-card__label">Цена</p>  
-                                    <p class="tours-card__price">от 3500$</p>
+                            <div class="tours-card__footer">
+                                <div class="tours-card__price">
+                                    <p class="tours-card__price-label">Цена</p>  
+                                    <p class="tours-card__price-value">от 3500$</p>
                                 </div>
-                                <div class="tours-header__actions">
-                                    <button class="tours-card__button"> 
+                                <div class="tours-card__actions">
+                                    <a class="tours-card__button"> 
                                         Подробнее
                                         <span class="btn__icon" aria-hidden="true"><!-- стрелка SVG --></span>
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="tours-card">
-                        <img class="tours-card__img" src="./images/img4" alt="Фото достопримечательности">
+                        <img class="tours-card__img" src="./images/img4.jpg" alt="Фото достопримечательности">
                         <div class="tours-card__level">
                             <p class="tours-card__days">3 дня</p>
                             <p class="tours-card__difficulty">Средний</p>
@@ -171,16 +171,16 @@
                         <div class="tours-card__content">
                             <h3 class="tours-card__title">Вулкан Иджен</h3>
                             <p class="tours-card__description">Увидьте знаменитые синие огни и крупнейшее кислотное озеро в мире. Встреча с добытчиками серы.</p>
-                            <div class="tours-card__specifications">
-                                <div class="tours__stat-item">
-                                    <p class="tours-card__label">Цена</p>  
-                                    <p class="tours-card__price">от 1500$</p>
+                            <div class="tours-card__footer">
+                                <div class="tours-card__price">
+                                    <p class="tours-card__price-label">Цена</p>  
+                                    <p class="tours-card__price-value">от 1500$</p>
                                 </div>
-                                <div class="tours-header__actions">
-                                    <button class="tours-card__button"> 
+                                <div class="tours-card__actions">
+                                    <a class="tours-card__button"> 
                                         Подробнее
                                         <span class="btn__icon" aria-hidden="true"><!-- стрелка SVG --></span>
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -191,10 +191,10 @@
         </section>
         
         <!-- reviews-section -->
-        <section class="reviews-section">
+        <section class="reviews-section" id="reviews">
             <div class="container">
                 <div class="reviews__header">
-                    <p class="reviews__description">ВОСПОМИНАНИЯ</p>
+                    <p class="reviews__subtitle">ВОСПОМИНАНИЯ</p>
                     <h2 class="reviews__title">Запечатлите ваше путешествие навсегда</h2>
                     <p class="reviews__description">
                         Переживите каждый рассвет и вулканический пейзаж заново с профессиональной фото- и видеосъёмкой
@@ -204,36 +204,36 @@
                 <div class="reviews__cards">
 
                     <div class="reviews-card">
-                        <img class="reviews-card__img" src="./images/img" alt="Фото достопримечательности">
-                        <div class="reviews-card__content">
-                            <img class="reviews-card__estimation" src="./images/Stars.svg" alt="5 Звезд"><!--svg-->
+                        <img class="reviews-card__img" src="./images/img.jpg" alt="Фото достопримечательности">
+                        <div class="reviews-card__body">
+                            <img class="reviews-card__rating" src="./images/Stars.svg" alt="5 Звезд"><!--svg-->
                             <h3 class="reviews-card__title">Иван Петров</h3>
                             <p class="reviews-card__description">Рассвет был просто невероятным. Гиды очень помогли с фотосессией, кадры получились как из журнала.</p>
                         </div>
                     </div>
 
                     <div class="reviews-card">
-                        <img class="reviews-card__img" src="./images/img" alt="Фото достопримечательности">
-                        <div class="reviews-card__content">
-                            <img class="reviews-card__estimation" src="./images/Stars.svg" alt="5 Звезд"><!--svg-->
+                        <img class="reviews-card__img" src="./images/img.jpg" alt="Фото достопримечательности">
+                        <div class="reviews-card__body">
+                            <img class="reviews-card__rating" src="./images/Stars.svg" alt="5 Звезд">
                             <h3 class="reviews-card__title">Анна Фаузи</h3>
                             <p class="reviews-card__description">Потрясающие виды и отличная организация. Это приключение я запомню надолго, особенно туман в долине.</p>
                         </div>
                     </div>
 
                     <div class="reviews-card">
-                        <img class="reviews-card__img" src="./images/img" alt="Фото достопримечательности">
-                        <div class="reviews-card__content">
-                            <img class="reviews-card__estimation" src="./images/Stars.svg" alt="5 Звезд"><!--svg-->
+                        <img class="reviews-card__img" src="./images/img.jpg" alt="Фото достопримечательности">
+                        <div class="reviews-card__body">
+                            <img class="reviews-card__rating" src="./images/Stars.svg" alt="5 Звезд">
                             <h3 class="reviews-card__title">Алия Рахман</h3>
                             <p class="reviews-card__description">Захватывающий дух рассвет и удивительные пейзажи. Каждое фото как открытка, профессионально и красиво.</p>
                         </div>
                     </div>
 
                     <div class="reviews-card">
-                        <img class="reviews-card__img" src="./images/img" alt="Фото достопримечательности">
-                        <div class="reviews-card__content">
-                            <img class="reviews-card__estimation" src="./images/Stars.svg" alt="5 Звезд"><!--svg-->
+                        <img class="reviews-card__img" src="./images/img.jpg" alt="Фото достопримечательности">
+                        <div class="reviews-card__body">
+                            <img class="reviews-card__rating" src="./images/Stars.svg" alt="5 Звезд">
                             <h3 class="reviews-card__title">Риски Адитья</h3>
                             <p class="reviews-card__description">Профессиональные гиды и великолепные локации. Мы получили максимум эмоций и потрясающие видео.</p>
                         </div>
@@ -245,29 +245,29 @@
         <!-- gallery-section  -->
         <section class="gallery-section">
             <div class="container">
-                <h2 class="gallery-title">Фотогалерея</h2>
+                <h2 class="gallery__title">Фотогалерея</h2>
                 
-                <div class="photo-grid">
+                <div class="gallery__grid">
                 
-                <div class="photo-grid__item photo-grid__item--tall">
-                    <img src="./images/img.jpg" alt="Фото горы">
-                </div>
+                    <div class="gallery__item gallery__item--tall">
+                        <img src="./images/img.jpg" alt="Фото горы">
+                    </div>
 
-                <div class="photo-grid__item">
-                    <img src="./images/img.jpg" alt="Фото горы">
-                </div>
+                    <div class="gallery__item">
+                        <img src="./images/img.jpg" alt="Фото горы">
+                    </div>
 
-                <div class="photo-grid__item">
-                    <img src="./images/img.jpg" alt="Фото горы">
-                </div>
+                    <div class="gallery__item">
+                        <img src="./images/img.jpg" alt="Фото горы">
+                    </div>
 
-                <div class="photo-grid__item photo-grid__item--tall">
-                    <img src="./images/img.jpg" alt="Фото горы">
-                </div>
+                    <div class="gallery__item gallery__item--tall">
+                        <img src="./images/img.jpg" alt="Фото горы">
+                    </div>
 
-                <div class="photo-grid__item photo-grid__item--wide">
-                    <img src="./images/img.jpg" alt="Фото горы">
-                </div>
+                    <div class="gallery__item gallery__item--wide">
+                        <img src="./images/img.jpg" alt="Фото горы">
+                    </div>
 
                 </div>
 
@@ -275,55 +275,55 @@
         </section>
 
         <!-- booking-section  -->
-        <section class="booking-section">
+        <section class="booking-section" id="booking">
             <div class="container">
                 <h2 class="booking-title">Как забронировать тур</h2>
 
-                <div class="booking-cards">
-                    <div class="booking-card"><!-- <div class="info-card__reservation"> info-card__booking -->
+                <div class="booking-content">
+                    <div class="booking-photo">
                         <img src="./images/img.jpg" alt="Фото горы">
-                        <div>
-                            <p class="info-card__description">
+                        <div class="booking-photo__overlay">
+                            <p class="booking-photo__description">
                                 Ваше путешествие начнется здесь. Мы позаботимся о каждой детали, от трансфера до лучших смотровых площадок.
                             </p>
-                            <button class="">
+                            <a class="booking-photo__btn">
                                 Забронировать сейчас
-                                <span></span>
-                            </button>
+                                <span class="btn__icon" aria-hidden="true"><!-- стрелка SVG --></span>
+                            </a>
                         </div>
                     </div>
                 
-                    <div class="booking-card"> <!-- <div class="info-card__details"> -->
-                        <h2 class="booking-card__title">Детали тура</h2>
+                    <div class="booking-steps">
+                        <h3 class="booking-steps__title">Как это работает —<br>Забронировать тур в 4 шага</h3>
                         
-                        <ul class="booking-list"> <!--booking-param--><!--booking-steps-->
+                        <ul class="booking-list">
                             
-                            <li class="booking-list__item"><!--details-param__item-->
-                                <span class="details-list__value">01</span><!--details-list__step-->
+                            <li class="booking-list__item">
+                                <span class="booking-list__step">01</span>
                                 <div class="booking-list__text">
                                     <span class="booking-list__title">Выберите пакет</span>
                                     <span class="booking-list__description">Выберите тур, который лучше всего подходит вашему расписанию и стилю путешествия.</span>
                                 </div>
                             </li>
 
-                            <li class="booking-list__item"><!--details-param__item-->
-                                <span class="details-list__value">02</span>
+                            <li class="booking-list__item">
+                                <span class="booking-list__step">02</span>
                                 <div class="booking-list__text">
-                                    <span class="booking-list__title">Проверьте доступностьт</span>
+                                    <span class="booking-list__title">Проверьте доступность</span>
                                     <span class="booking-list__description">Выберите дату и размер группы.</span>
                                 </div>
                             </li>
 
-                            <li class="booking-list__item"><!--details-param__item-->
-                                <span class="details-list__value">03</span>
+                            <li class="booking-list__item">
+                                <span class="booking-list__step">03</span>
                                 <div class="booking-list__text">
                                     <span class="booking-list__title">Сделайте бронь</span>
                                     <span class="booking-list__description">Подтвердите бронирование онлайн за несколько минут.</span>
                                 </div>
                             </li>
 
-                            <li class="booking-list__item"><!--details-param__item-->
-                                <span class="details-list__value">04</span>
+                            <li class="booking-list__item">
+                                <span class="booking-list__step">04</span>
                                 <div class="booking-list__text">
                                     <span class="booking-list__title">Наслаждайтесь впечатлениями!</span>
                                 </div>
@@ -339,102 +339,106 @@
         <div class="bottom-wrapper"> 
        
             <!-- contacts-section -->
-            <section class="contacts-section">
+            <section class="contacts-section" id="contacts">
                 <div class="container">
                     
-                    <div class="contacts__info">
-                        <div class="contacts__info-content">
-                            <h2 class="contacts__title">Свяжитесь с<br>нами</h2>
-                            <p class="contacts__description">
-                                Мы рады ответить на ваши вопросы и помочь спланировать незабываемое путешествие к вершинам вулканов.
-                            </p>
-                                
-                            <div class="contacts__buttons">
-                                <button class="">Забронировать тур <span></span></button>
+                    <div class="contacts__inner">
+                        <div class="contacts__info">
+                            <div class="contacts__info-content">
+                                <h2 class="contacts__title">Свяжитесь с<br>нами</h2>
+                                <p class="contacts__description">
+                                    Мы рады ответить на ваши вопросы и помочь спланировать незабываемое путешествие к вершинам вулканов.
+                                </p>
+                                    
+                                <div class="contacts__button-wrapper">
+                                    <a class="contacts__button">Забронировать тур <span class="contacts__button-icon"><!-- стрелка SVG --></span></a>
+                                </div>
+                                    
                             </div>
-                                
                         </div>
-                    </div>
 
-                    <div class="contacts__details"><!--???-->
-                        
-                        <ul class="contacts-list">
+                        <div class="contacts__details">
                             
-                            <li class="contacts-list__item">
-                            <div class="contacts-list__icon"><!-- SVG иконка --></div>
-                            <div class="contacts-list__text">
-                                <span class="contacts-list__label">Адрес</span>
-                                <span class="contacts-list__value">г. Минск, ул. Путешественников, 12</span>
-                            </div>
-                            </li>
+                            <ul class="contacts-list">
+                                
+                                <li class="contacts-list__item">
+                                <div class="contacts-list__icon"><!-- SVG иконка --></div>
+                                <div class="contacts-list__text">
+                                    <span class="contacts-list__label">Адрес</span>
+                                    <span class="contacts-list__value">г. Минск, ул. Путешественников, 12</span>
+                                </div>
+                                </li>
 
-                            <li class="contacts-list__item">
-                            <div class="contacts-list__icon"><!-- SVG иконка --></div>
-                            <div class="contacts-list__text">
-                                <span class="contacts-list__label">Телефон</span>
-                                <span class="contacts-list__value">+375 (29) 123-45-67</span>
-                            </div>
-                            </li>
+                                <li class="contacts-list__item">
+                                <div class="contacts-list__icon"><!-- SVG иконка --></div>
+                                <div class="contacts-list__text">
+                                    <span class="contacts-list__label">Телефон</span>
+                                    <span class="contacts-list__value">+375 (29) 123-45-67</span>
+                                </div>
+                                </li>
 
-                            <li class="contacts-list__item">
-                            <div class="contacts-list__icon"><!-- SVG иконка --></div>
-                            <div class="contacts-list__text">
-                                <span class="contacts-list__label">Email</span>
-                                <span class="contacts-list__value">info@mountbromo.ru</span>
-                            </div>
-                            </li>
+                                <li class="contacts-list__item">
+                                <div class="contacts-list__icon"><!-- SVG иконка --></div>
+                                <div class="contacts-list__text">
+                                    <span class="contacts-list__label">Email</span>
+                                    <span class="contacts-list__value">info@mountbromo.ru</span>
+                                </div>
+                                </li>
 
-                            <li class="contacts-list__item">
-                            <div class="contacts-list__icon"><!-- SVG иконка --></div>
-                            <div class="contacts-list__text">
-                                <span class="contacts-list__label">Режим работы</span>
-                                <span class="contacts-list__value">Пн–Пт 9:00–20:00</span>
-                            </div>
-                            </li>
+                                <li class="contacts-list__item">
+                                <div class="contacts-list__icon"><!-- SVG иконка --></div>
+                                <div class="contacts-list__text">
+                                    <span class="contacts-list__label">Режим работы</span>
+                                    <span class="contacts-list__value">Пн–Пт 9:00–20:00</span>
+                                </div>
+                                </li>
 
-                        </ul>
+                            </ul>
+                        </div>
+
                     </div>
-
                 </div>
             </section>
 
             <footer class="footer">
                 <div class="container">
 
-                    <p class="footer__info-text">Mount Bromo © 2026 Все права защищены</p>
+                    <div class="footer__inner">
+                        <p class="footer__copyright">Mount Bromo © 2026 Все права защищены</p>
 
-                    <nav class="footer__nav">
-                        <ul class="footer__nav-lists">
-                            <li class="footer__nav-item"><a href="#" class="footer-nav__link">Главная</a></li>
-                            <li class="footer__nav-item"><a href="#" class="footer-nav__link">Туры</a></li>
-                            <li class="footer__nav-item"><a href="#" class="footer-nav__link">Отзывы</a></li>
-                            <li class="footer__nav-item"><a href="#" class="footer-nav__link">Контакты</a></li>
-                        </ul>
-                    </nav>  
+                        <nav class="footer__nav">
+                            <ul class="footer__nav-list">
+                                <li class="footer__nav-item"><a href="#hero" class="footer__nav-link">Главная</a></li>
+                                <li class="footer__nav-item"><a href="#tours" class="footer__nav-link">Туры</a></li>
+                                <li class="footer__nav-item"><a href="#reviews" class="footer__nav-link">Отзывы</a></li>
+                                <li class="footer__nav-item"><a href="#contacts" class="footer__nav-link">Контакты</a></li>
+                            </ul>
+                        </nav>  
 
-                    <div class="footer__links">
-                        <ul class="footer__links-lists">
-                            <li class="footer__nav-item">
-                                <a class="footer__link" href="#">
-                                    <img class="footer__link-social" src="./images/Instagram.svg" alt="Instagram">
-                                </a>
-                            </li>
-                            <li class="footer__nav-item">
-                                <a class="footer__link" href="#">
-                                    <img class="footer__link-social" src="./images/Circle-x.svg" alt="Circle-x">
-                                </a>
-                            </li>
-                            <li class="footer__nav-item">
-                                <a class="footer__link" href="#">
-                                    <img class="footer__link-social" src="./images/Youtube.svg" alt="Youtube">
-                                </a>
-                            </li>
-                            <li class="footer__nav-item">
-                                <a class="footer__link" href="#">
-                                    <img class="footer__link-social" src="./images/Message.svg" alt="Message">
-                                </a>
-                            </li>
-                        </ul>
+                        <div class="footer__social">
+                            <ul class="footer__social-list">
+                                <li class="footer__social-item">
+                                    <a class="footer__social-link" href="#">
+                                        <img class="footer__social-icon" src="./images/Instagram.svg" alt="Instagram">
+                                    </a>
+                                </li>
+                                <li class="footer__social-item">
+                                    <a class="footer__social-link" href="#">
+                                        <img class="footer__social-icon" src="./images/Circle-x.svg" alt="Circle-x">
+                                    </a>
+                                </li>
+                                <li class="footer__social-item">
+                                    <a class="footer__social-link" href="#">
+                                        <img class="footer__social-icon" src="./images/Youtube.svg" alt="Youtube">
+                                    </a>
+                                </li>
+                                <li class="footer__social-item">
+                                    <a class="footer__social-link" href="#">
+                                        <img class="footer__social-icon" src="./images/Message.svg" alt="Message">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </footer>
