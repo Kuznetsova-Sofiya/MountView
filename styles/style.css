@@ -473,3 +473,119 @@ body {
     width: 18px;/*width: 14px;*/
     height: 22.62px;/*height: 18px;*/
 }
+
+
+
+/* review-section */
+.reviews-section {
+    padding-bottom: 34.46px;   /* из макета 2, если из 1, то было бы  83.44 */
+}
+
+.reviews__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+    margin: 0 auto 80px;/*?*/
+}
+
+/* воспоминания */
+.reviews__subtitle {
+    padding: 7px 15px;
+    border: 1px solid #e5e7eb;
+    border-radius: 32px;
+    background-color: #ffffff;
+    font-family: 'Unbounded', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    text-transform: uppercase;/*необязательно, и так каапс*/
+    white-space: nowrap;
+    color: #373737;
+}
+
+.reviews__title {
+    width: 1000px;
+    margin-top: 24px;
+    font-family: 'Unbounded', sans-serif;
+    font-size: 52px;
+    font-weight: 500;
+    line-height: 62px;
+    color: #373737;
+    text-align: center;
+}
+
+.reviews__description {
+    width: 720px;
+    margin-top: 16px;
+    font-family: 'Unbounded', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px;
+    color: #4b5563;
+    text-align: center;
+}
+
+
+.reviews__cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 34.71px; /* 24+0.42+9.08 = 33.5, 11.92+24 = 35.92 , (35.92+33.5)/2 = 34.71 */
+    padding: 4.28px 0; /*берем бОльшую*/
+}
+
+.reviews-card {
+    width: 333px;
+    height: 457px;
+    padding: 14px;
+    border-radius: 28px;
+    background-color: #ffffff;
+    box-shadow: 0 14.07px 28.14px rgba(0, 0, 0, 0.051);
+}
+
+.reviews-card:nth-child(odd) {
+    transform: rotate(-1.5deg);
+}
+
+.reviews-card:nth-child(even) {
+    transform: rotate(1.2deg);
+}
+
+.reviews-card__img {
+    display: block;
+    width: 100%;
+    height: 246.21px;
+    border-radius: 18px;
+    object-fit: cover;
+}
+
+.reviews-card__body {
+    padding: 19px 9.38px 9.38px;
+}
+
+.reviews-card__rating {
+    display: block;
+    width: 103.17px;
+    height: 18.76px;
+    margin-bottom: 14.07px;
+}
+
+.reviews-card__title {
+    margin-bottom: 7.03px;
+    font-family: 'Unbounded', sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #373737;
+}
+
+.reviews-card__description {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #4b5563;
+}
+
+
