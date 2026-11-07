@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MountView</title>
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Unbounded:wght@200;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
@@ -19,7 +20,7 @@
                         </a>
                         <nav class="hero-nav">
                             <ul class="hero-nav__list">
-                                <li class="hero-nav__item"><a href="#hero" class="hero-nav__link">Главная</a></li>
+                                <li class="hero-nav__item"><a href="#hero" class="hero-nav__link hero-nav__link--active">Главная</a></li>
                                 <li class="hero-nav__item"><a href="#tours" class="hero-nav__link">Туры</a></li>
                                 <li class="hero-nav__item"><a href="#reviews" class="hero-nav__link">Отзывы</a></li>
                                 <li class="hero-nav__item"><a href="#booking" class="hero-nav__link">Бронирование</a></li>
@@ -27,16 +28,19 @@
                             </ul>
                         </nav>
                         <div class="hero-header__actions">
-                            <a class="hero-header__btn">
+                            <a class="hero-header__btn" href="#">
                                 Забронировать сейчас
-                                <span class="btn__icon" aria-hidden="true"><!-- стрелка SVG --></span>
+                                <span class="btn__icon" aria-hidden="true">
+                                    <img src="./images/arrow-hero.svg" alt="">
+                                </span>
                             </a>
                         </div>
                     </header>
 
                     <div class="hero-title">
                         <h1>
-                            Незабываемый рассвет<br> на горе Бромо
+                            Незабываемый рассвет
+                            <span class="hero-title__accent">на горе Бромо</span>
                         </h1>
                     </div>
 
@@ -52,9 +56,11 @@
                             <p class="hero-card__social-description">
                                 Отправляйтесь в путешествие среди вулканических пейзажей и золотистых небес, наслаждаясь красотой, неподвластной времени, в рамках профессионально организованных туров на вулкан Бромо.
                             </p>
-                            <a class="hero-card__btn">
+                            <a class="hero-card__btn" href="#">
                                 Забронировать сейчас
-                                <span class="btn__icon" aria-hidden="true"><!-- стрелка SVG --></span>
+                                <span class="btn__icon" aria-hidden="true">
+                                    <img src="./images/arrow-hero.svg" alt="">
+                                </span>
                             </a>
                         </div>
                     
@@ -64,7 +70,9 @@
                             <ul class="details-list">
                                 
                                 <li class="details-list__item">
-                                    <div class="details-list__icon"><!-- SVG иконка --></div>
+                                    <div class="details-list__icon">
+                                        <img class="footer__link-main" src="./images/calendar.svg" alt="Calendar">
+                                    </div>    
                                     <div class="details-list__text">
                                         <span class="details-list__label">Длительность</span>
                                         <span class="details-list__value">5 дней</span>
@@ -72,7 +80,9 @@
                                 </li>
 
                                 <li class="details-list__item">
-                                    <div class="details-list__icon"><!-- SVG иконка --></div>
+                                    <div class="details-list__icon">
+                                        <img class="footer__link-main" src="./images/activity.svg" alt="Activity">
+                                    </div> 
                                     <div class="details-list__text">
                                         <span class="details-list__label">Уровень</span>
                                         <span class="details-list__value">Лёгкий</span>
@@ -80,7 +90,9 @@
                                 </li>
 
                                 <li class="details-list__item">
-                                    <div class="details-list__icon"><!-- SVG иконка --></div>
+                                    <div class="details-list__icon">
+                                        <img class="footer__link-main" src="./images/users.svg" alt="Users">
+                                    </div> 
                                     <div class="details-list__text">
                                         <span class="details-list__label">Группа</span>
                                         <span class="details-list__value">12 человек</span>
@@ -88,7 +100,9 @@
                                 </li>
 
                                 <li class="details-list__item">
-                                    <div class="details-list__icon"><!-- SVG иконка --></div>
+                                    <div class="details-list__icon">
+                                        <img class="footer__link-main" src="./images/tag.svg" alt="Tag">
+                                    </div> 
                                     <div class="details-list__text">
                                         <span class="details-list__label">Цена</span>
                                         <span class="details-list__value">от 2 000$</span>
@@ -115,7 +129,7 @@
                 <div class="tours__cards">
 
                     <div class="tours-card">
-                        <img class="tours-card__img" src="./images/img2.jpg" alt="Фото достопримечательности">
+                        <img class="tours-card__img" src="./images/tour-bromo.jpg" alt="Фото Бромо">
                         <div class="tours-card__level">
                             <p class="tours-card__days">5 дней</p>
                             <p class="tours-card__difficulty">Лёгкий</p>
@@ -129,9 +143,11 @@
                                     <p class="tours-card__price-value">от 2000$</p>
                                 </div>
                                 <div class="tours-card__actions">
-                                    <a class="tours-card__button"> 
+                                    <a class="tours-card__button" href="#"> 
                                         Подробнее
-                                        <span class="tours-card__button-icon" aria-hidden="true"><!-- стрелка SVG --></span> <!--  т.к. стрелки то другие-->
+                                        <span class="tours-card__button-icon" aria-hidden="true">
+                                            <img src="./images/arrow-tours.svg" alt="">
+                                        </span> 
                                     </a>
                                 </div>
                             </div>
@@ -139,7 +155,7 @@
                     </div>
 
                     <div class="tours-card">
-                        <img class="tours-card__img" src="./images/img3.jpg" alt="Фото достопримечательности">
+                        <img class="tours-card__img" src="./images/tour-rinjani.jpg" alt="Фото Ринджани">
                         <div class="tours-card__level">
                             <p class="tours-card__days">7 дней</p>
                             <p class="tours-card__difficulty">Сложный</p>
@@ -153,9 +169,11 @@
                                     <p class="tours-card__price-value">от 3500$</p>
                                 </div>
                                 <div class="tours-card__actions">
-                                    <a class="tours-card__button"> 
+                                    <a class="tours-card__button" href="#"> 
                                         Подробнее
-                                        <span class="btn__icon" aria-hidden="true"><!-- стрелка SVG --></span>
+                                        <span class="tours-card__button-icon" aria-hidden="true">
+                                            <img src="./images/arrow-tours.svg" alt="">
+                                        </span> 
                                     </a>
                                 </div>
                             </div>
@@ -163,7 +181,7 @@
                     </div>
 
                     <div class="tours-card">
-                        <img class="tours-card__img" src="./images/img4.jpg" alt="Фото достопримечательности">
+                        <img class="tours-card__img" src="./images/tour-ijen.jpg" alt="Фото Иджен">
                         <div class="tours-card__level">
                             <p class="tours-card__days">3 дня</p>
                             <p class="tours-card__difficulty">Средний</p>
@@ -177,9 +195,11 @@
                                     <p class="tours-card__price-value">от 1500$</p>
                                 </div>
                                 <div class="tours-card__actions">
-                                    <a class="tours-card__button"> 
+                                    <a class="tours-card__button" href="#"> 
                                         Подробнее
-                                        <span class="btn__icon" aria-hidden="true"><!-- стрелка SVG --></span>
+                                        <span class="tours-card__button-icon" aria-hidden="true">
+                                            <img src="./images/arrow-tours.svg" alt="">
+                                        </span> 
                                     </a>
                                 </div>
                             </div>
@@ -204,36 +224,36 @@
                 <div class="reviews__cards">
 
                     <div class="reviews-card">
-                        <img class="reviews-card__img" src="./images/img.jpg" alt="Фото достопримечательности">
+                        <img class="reviews-card__img" src="./images/review-1.jpg" alt="Фото достопримечательности">
                         <div class="reviews-card__body">
-                            <img class="reviews-card__rating" src="./images/Stars.svg" alt="5 Звезд"><!--svg-->
+                            <img class="reviews-card__rating" src="./images/stars.svg" alt="5 Звезд">
                             <h3 class="reviews-card__title">Иван Петров</h3>
                             <p class="reviews-card__description">Рассвет был просто невероятным. Гиды очень помогли с фотосессией, кадры получились как из журнала.</p>
                         </div>
                     </div>
 
                     <div class="reviews-card">
-                        <img class="reviews-card__img" src="./images/img.jpg" alt="Фото достопримечательности">
+                        <img class="reviews-card__img" src="./images/review-2.jpg" alt="Фото достопримечательности">
                         <div class="reviews-card__body">
-                            <img class="reviews-card__rating" src="./images/Stars.svg" alt="5 Звезд">
+                            <img class="reviews-card__rating" src="./images/stars.svg" alt="5 Звезд">
                             <h3 class="reviews-card__title">Анна Фаузи</h3>
                             <p class="reviews-card__description">Потрясающие виды и отличная организация. Это приключение я запомню надолго, особенно туман в долине.</p>
                         </div>
                     </div>
 
                     <div class="reviews-card">
-                        <img class="reviews-card__img" src="./images/img.jpg" alt="Фото достопримечательности">
+                        <img class="reviews-card__img" src="./images/review-3.jpg" alt="Фото достопримечательности">
                         <div class="reviews-card__body">
-                            <img class="reviews-card__rating" src="./images/Stars.svg" alt="5 Звезд">
+                            <img class="reviews-card__rating" src="./images/stars.svg" alt="5 Звезд">
                             <h3 class="reviews-card__title">Алия Рахман</h3>
                             <p class="reviews-card__description">Захватывающий дух рассвет и удивительные пейзажи. Каждое фото как открытка, профессионально и красиво.</p>
                         </div>
                     </div>
 
                     <div class="reviews-card">
-                        <img class="reviews-card__img" src="./images/img.jpg" alt="Фото достопримечательности">
+                        <img class="reviews-card__img" src="./images/review-4.jpg" alt="Фото достопримечательности">
                         <div class="reviews-card__body">
-                            <img class="reviews-card__rating" src="./images/Stars.svg" alt="5 Звезд">
+                            <img class="reviews-card__rating" src="./images/stars.svg" alt="5 Звезд">
                             <h3 class="reviews-card__title">Риски Адитья</h3>
                             <p class="reviews-card__description">Профессиональные гиды и великолепные локации. Мы получили максимум эмоций и потрясающие видео.</p>
                         </div>
@@ -250,23 +270,23 @@
                 <div class="gallery__grid">
                 
                     <div class="gallery__item gallery__item--tall">
-                        <img src="./images/img.jpg" alt="Фото горы">
+                        <img src="./images/gallery-1.jpg" alt="Фото горы">
                     </div>
 
                     <div class="gallery__item">
-                        <img src="./images/img.jpg" alt="Фото горы">
+                        <img src="./images/gallery-2.jpg" alt="Фото горы">
                     </div>
 
                     <div class="gallery__item">
-                        <img src="./images/img.jpg" alt="Фото горы">
+                        <img src="./images/gallery-3.jpg" alt="Фото горы">
                     </div>
 
                     <div class="gallery__item gallery__item--tall">
-                        <img src="./images/img.jpg" alt="Фото горы">
+                        <img src="./images/gallery-4.jpg" alt="Фото горы">
                     </div>
 
                     <div class="gallery__item gallery__item--wide">
-                        <img src="./images/img.jpg" alt="Фото горы">
+                        <img src="./images/gallery-5.jpg" alt="Фото горы">
                     </div>
 
                 </div>
@@ -281,14 +301,16 @@
 
                 <div class="booking-content">
                     <div class="booking-photo">
-                        <img src="./images/img.jpg" alt="Фото горы">
+                        <img src="./images/booking-photo.jpg" alt="Фото горы">
                         <div class="booking-photo__overlay">
                             <p class="booking-photo__description">
                                 Ваше путешествие начнется здесь. Мы позаботимся о каждой детали, от трансфера до лучших смотровых площадок.
                             </p>
-                            <a class="booking-photo__btn">
+                            <a class="booking-photo__btn" href="#">
                                 Забронировать сейчас
-                                <span class="btn__icon" aria-hidden="true"><!-- стрелка SVG --></span>
+                                <span class="btn__icon" aria-hidden="true">
+                                     <img src="./images/arrow-tours.svg" alt="">
+                                </span>
                             </a>
                         </div>
                     </div>
@@ -351,7 +373,11 @@
                                 </p>
                                     
                                 <div class="contacts__button-wrapper">
-                                    <a class="contacts__button">Забронировать тур <span class="contacts__button-icon"><!-- стрелка SVG --></span></a>
+                                    <a class="contacts__button" href="#">Забронировать тур 
+                                        <span class="contacts__button-icon">
+                                            <img src="./images/arrow-contacts.svg" alt="">
+                                        </span>
+                                    </a>
                                 </div>
                                     
                             </div>
@@ -362,35 +388,43 @@
                             <ul class="contacts-list">
                                 
                                 <li class="contacts-list__item">
-                                <div class="contacts-list__icon"><!-- SVG иконка --></div>
-                                <div class="contacts-list__text">
-                                    <span class="contacts-list__label">Адрес</span>
-                                    <span class="contacts-list__value">г. Минск, ул. Путешественников, 12</span>
-                                </div>
+                                    <div class="contacts-list__icon">
+                                        <img class="footer__link-main" src="./images/map-pin.svg" alt="Map">
+                                    </div>
+                                    <div class="contacts-list__text">
+                                        <span class="contacts-list__label">Адрес</span>
+                                        <span class="contacts-list__value">г. Минск, ул. Путешественников, 12</span>
+                                    </div>
                                 </li>
 
                                 <li class="contacts-list__item">
-                                <div class="contacts-list__icon"><!-- SVG иконка --></div>
-                                <div class="contacts-list__text">
-                                    <span class="contacts-list__label">Телефон</span>
-                                    <span class="contacts-list__value">+375 (29) 123-45-67</span>
-                                </div>
+                                    <div class="contacts-list__icon">
+                                        <img class="footer__link-main" src="./images/phone.svg" alt="Phone">
+                                    </div>
+                                    <div class="contacts-list__text">
+                                        <span class="contacts-list__label">Телефон</span>
+                                        <span class="contacts-list__value">+375 (29) 123-45-67</span>
+                                    </div>
                                 </li>
 
                                 <li class="contacts-list__item">
-                                <div class="contacts-list__icon"><!-- SVG иконка --></div>
-                                <div class="contacts-list__text">
-                                    <span class="contacts-list__label">Email</span>
-                                    <span class="contacts-list__value">info@mountbromo.ru</span>
-                                </div>
+                                    <div class="contacts-list__icon">
+                                        <img class="footer__link-main" src="./images/mail.svg" alt="Mail">
+                                    </div>
+                                    <div class="contacts-list__text">
+                                        <span class="contacts-list__label">Email</span>
+                                        <span class="contacts-list__value">info@mountbromo.ru</span>
+                                    </div>
                                 </li>
 
                                 <li class="contacts-list__item">
-                                <div class="contacts-list__icon"><!-- SVG иконка --></div>
-                                <div class="contacts-list__text">
-                                    <span class="contacts-list__label">Режим работы</span>
-                                    <span class="contacts-list__value">Пн–Пт 9:00–20:00</span>
-                                </div>
+                                    <div class="contacts-list__icon">
+                                        <img class="footer__link-main" src="./images/clock.svg" alt="Clock">
+                                    </div>
+                                    <div class="contacts-list__text">
+                                        <span class="contacts-list__label">Режим работы</span>
+                                        <span class="contacts-list__value">Пн–Пт 9:00–20:00</span>
+                                    </div>
                                 </li>
 
                             </ul>
@@ -419,22 +453,22 @@
                             <ul class="footer__social-list">
                                 <li class="footer__social-item">
                                     <a class="footer__social-link" href="#">
-                                        <img class="footer__social-icon" src="./images/Instagram.svg" alt="Instagram">
+                                        <img class="footer__social-icon" src="./images/instagram.svg" alt="Instagram">
                                     </a>
                                 </li>
                                 <li class="footer__social-item">
                                     <a class="footer__social-link" href="#">
-                                        <img class="footer__social-icon" src="./images/Circle-x.svg" alt="Circle-x">
+                                        <img class="footer__social-icon" src="./images/circle-x.svg" alt="Circle-x">
                                     </a>
                                 </li>
                                 <li class="footer__social-item">
                                     <a class="footer__social-link" href="#">
-                                        <img class="footer__social-icon" src="./images/Youtube.svg" alt="Youtube">
+                                        <img class="footer__social-icon" src="./images/youtube.svg" alt="Youtube">
                                     </a>
                                 </li>
                                 <li class="footer__social-item">
                                     <a class="footer__social-link" href="#">
-                                        <img class="footer__social-icon" src="./images/Message.svg" alt="Message">
+                                        <img class="footer__social-icon" src="./images/message-circle.svg" alt="Message">
                                     </a>
                                 </li>
                             </ul>
