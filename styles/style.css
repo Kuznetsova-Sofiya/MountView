@@ -1727,3 +1727,61 @@ body {
         color: #4b5563;
     }
 }
+
+
+/* бесконечная лента отзывов - только для десктопа (от 768px)*/
+.reviews__cards--copy {
+    display: none;
+}
+
+@media (min-width: 768px) {
+
+    .reviews__marquee {
+        display: flex;
+        overflow: hidden;
+        padding: 20px 0 40px;
+        margin: -20px 0 -40px;
+        /* затухание по краям */
+        -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+        mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+    }
+
+    .reviews__marquee .reviews__cards {
+        flex: 0 0 auto;
+        min-width: 100%;
+        justify-content: space-around;
+        padding: 0 34.71px 0 0;
+        animation: reviews-marquee 40s linear infinite;
+    }
+
+    .reviews__marquee .reviews__cards--copy {
+        display: flex;
+    }
+
+    /* пауза при наведении мыши */
+    .reviews__marquee:hover .reviews__cards {
+        animation-play-state: paused;
+    }
+
+    /*анимация*/
+    @keyframes reviews-marquee {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-100%);
+        }
+    }
+}
+
+/* если в настройках включено "уменьшить движение" - останавливаем */
+@media (min-width: 768px) and (prefers-reduced-motion: reduce) {
+
+    .reviews__marquee .reviews__cards {
+        animation: none;
+    }
+
+    .reviews__marquee .reviews__cards--copy {
+        display: none;
+    }
+}
