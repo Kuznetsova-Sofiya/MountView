@@ -29,9 +29,9 @@
                         </nav>
                         <div class="hero-header__actions">
                             <a class="hero-header__btn" href="#">
-                                Забронировать сейчас
+                                Забронировать <span class="only-desktop">сейчас</span>
                                 <span class="btn__icon" aria-hidden="true">
-                                    <img src="./images/arrow-hero.svg" alt="">
+                                    <img src="./images/arrow-hero.svg" alt=""><!--Стрелка немного съехала, т.к. в svg есть пустой слой, который входит в фигуру. В секции контактов стрелка больше чем надо, тоже из-за svg.   А еще аватарки скачаны именно сами по себе сразу уже кружками, но код написан так, что даже если бы не были кружками, они бы все равно отображались корректно-->
                                 </span>
                             </a>
                         </div>
@@ -54,7 +54,7 @@
                             </div>
                             <span class="hero-card__social-text">Человек присоединилось</span>
                             <p class="hero-card__social-description">
-                                Отправляйтесь в путешествие среди вулканических пейзажей и золотистых небес, наслаждаясь красотой, неподвластной времени, в рамках профессионально организованных туров на вулкан Бромо.
+                                Отправляйтесь в путешествие среди вулканических пейзажей и золотистых небес, наслаждаясь красотой<span class="only-desktop">, неподвластной времени,</span> в рамках <span class="only-desktop">профессионально </span>организованных туров<span class="only-desktop"> на вулкан Бромо</span>.
                             </p>
                             <a class="hero-card__btn" href="#">
                                 Забронировать сейчас
@@ -122,7 +122,7 @@
                 <div class="tours__header">
                     <h2 class="tours__title">Наши туры</h2>
                     <p class="tours__description">
-                        Выбирайте свой идеальный маршрут: от спокойных прогулок на рассвете до экстремальных восхождений на действующие вулканы.
+                        Выбирайте свой идеальный маршрут: от спокойных прогулок <span class="only-desktop">на рассвете </span>до экстремальных восхождений на <span class="only-desktop">действующие </span>вулканы.
                     </p>
                 </div>
                 
@@ -215,9 +215,9 @@
             <div class="container">
                 <div class="reviews__header">
                     <p class="reviews__subtitle">ВОСПОМИНАНИЯ</p>
-                    <h2 class="reviews__title">Запечатлите ваше путешествие навсегда</h2>
+                    <h2 class="reviews__title">Запечатлите ваше путешествие<span class="only-desktop"> навсегда</span></h2>
                     <p class="reviews__description">
-                        Переживите каждый рассвет и вулканический пейзаж заново с профессиональной фото- и видеосъёмкой
+                        Переживите каждый рассвет и вулканический пейзаж заново с профессиональной <span class="only-desktop">фото- и видеосъёмкой</span><span class="only-mobile">съёмкой</span>
                     </p>
                 </div>
                 
@@ -228,7 +228,7 @@
                         <div class="reviews-card__body">
                             <img class="reviews-card__rating" src="./images/stars.svg" alt="5 Звезд">
                             <h3 class="reviews-card__title">Иван Петров</h3>
-                            <p class="reviews-card__description">Рассвет был просто невероятным. Гиды очень помогли с фотосессией, кадры получились как из журнала.</p>
+                            <p class="reviews-card__description">Рассвет был просто невероятным.<span class="only-desktop"> Гиды очень помогли с фотосессией, кадры получились как из журнала.</span></p>
                         </div>
                     </div>
 
@@ -237,7 +237,7 @@
                         <div class="reviews-card__body">
                             <img class="reviews-card__rating" src="./images/stars.svg" alt="5 Звезд">
                             <h3 class="reviews-card__title">Анна Фаузи</h3>
-                            <p class="reviews-card__description">Потрясающие виды и отличная организация. Это приключение я запомню надолго, особенно туман в долине.</p>
+                            <p class="reviews-card__description">Потрясающие виды и отличная организация. Это приключение я запомню надолго<span class="only-desktop">, особенно туман в долине</span>.</p>
                         </div>
                     </div>
 
@@ -246,7 +246,7 @@
                         <div class="reviews-card__body">
                             <img class="reviews-card__rating" src="./images/stars.svg" alt="5 Звезд">
                             <h3 class="reviews-card__title">Алия Рахман</h3>
-                            <p class="reviews-card__description">Захватывающий дух рассвет и удивительные пейзажи. Каждое фото как открытка, профессионально и красиво.</p>
+                            <p class="reviews-card__description">Захватывающий дух рассвет<span class="only-desktop"> и удивительные пейзажи. Каждое фото как открытка, профессионально и красиво</span>.</p>
                         </div>
                     </div>
 
@@ -255,7 +255,7 @@
                         <div class="reviews-card__body">
                             <img class="reviews-card__rating" src="./images/stars.svg" alt="5 Звезд">
                             <h3 class="reviews-card__title">Риски Адитья</h3>
-                            <p class="reviews-card__description">Профессиональные гиды и великолепные локации. Мы получили максимум эмоций и потрясающие видео.</p>
+                            <p class="reviews-card__description">Профессиональные гиды и великолепные локации. Мы получили максимум эмоций<span class="only-desktop"> и потрясающие видео</span>.</p>
                         </div>
                     </div>
                 </div>
@@ -375,7 +375,8 @@
                                 <div class="contacts__button-wrapper">
                                     <a class="contacts__button" href="#">Забронировать тур 
                                         <span class="contacts__button-icon">
-                                            <img src="./images/arrow-contacts.svg" alt="">
+                                            <span class="only-desktop"><img src="./images/arrow-contacts.svg" alt=""></span>
+                                            <span class="only-mobile"><img src="./images/arrow-hero.svg" alt=""></span>
                                         </span>
                                     </a>
                                 </div>

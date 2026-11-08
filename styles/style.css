@@ -1006,3 +1006,195 @@ body {
     width: 20px;
     height: 20px;
 }
+
+
+/* mobile-homepage 390px*/
+
+.only-mobile {
+    display: none;
+}
+
+@media (max-width: 767px) {
+
+    .only-desktop {
+        display: none;
+    }
+
+    .only-mobile {
+        display: inline;
+    }
+
+    /* hero-section*/
+    .hero-section {
+        padding-top: 0;
+    }
+
+    .hero-section .container {
+        padding: 0;
+    }
+
+    .hero-wrapper {
+        min-height: 0;
+        gap: 24px;
+        padding: 20px 16px 24px;
+        border-radius: 0 0 24px 24px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('../images/hero-bg.jpg');
+    }
+
+    /* header */
+    .hero-header {
+        align-items: center;
+    }
+
+    .hero-header__logo img {
+        width: 76px;
+    }
+
+    .hero-nav {
+        display: none;
+    }
+
+    .hero-header__btn {
+        width: auto;
+        height: 38px;
+        gap: 8px;
+        padding: 10.5px 3px 10.5px 10.5px;
+        font-size: 13px;
+        font-weight: 200;
+        line-height: 15px;
+        white-space: nowrap;
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1216);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+    }
+
+    .hero-header__btn .btn__icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .hero-header__btn .btn__icon img {
+        display: block;
+        width: 13.96px;/*30-6.39-9.65*/
+        height: 22.36px;/*30-8.44*/
+    }
+
+    .hero-title {
+        margin-top: 0;
+    }
+
+    .hero-title h1 {
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 36px;
+    }
+
+    .hero-title__accent {/*1ая и 2ая строка в одной строке*/
+        display: inline;
+    }
+
+    .hero-cards {
+        flex-direction: column;
+        gap: 24px;
+        margin-top: 0;
+    }
+
+    .hero-card__social {
+        justify-content: space-between;
+        align-content: normal;
+        column-gap: 0;
+        row-gap: 12px;
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.302);
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.102);
+        background-image: none;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+    }
+
+    .avatar-list__item {
+        width: 32px;
+        height: 32px;
+        margin-right: -12px;
+    }
+
+    .avatar-list__count {
+        width: 32px;
+        height: 32px;
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 12px;
+    }
+
+    .hero-card__social-text {
+        width: 180px;
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 14px;
+    }
+
+    .hero-card__social-description {
+        max-width: none;/*326px но есть падинги*/
+        margin-top: 0;
+        font-size: 12px;
+        line-height: 18px;
+        color: rgba(255, 255, 255, 0.702);
+    }
+
+    .hero-card__btn {
+        display: none;
+    }
+
+    .hero-card__details {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        width: 100%;
+        height: auto;
+        padding: 15px; /*рамка 1px */
+        border: 1px solid rgba(255, 255, 255, 0.302);
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.102);
+        box-shadow: none;
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+    }
+
+    .hero-card__details-title {
+        margin-bottom: 0;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .details-list {
+        gap: 8px;
+    }
+
+    .details-list__item {
+        height: auto;
+        padding: 11px 13px;
+        border-radius: 14px;
+        border-color: rgba(255, 255, 255, 0.149);
+        background-color: rgba(255, 255, 255, 0.0706);
+    }
+
+    .details-list__icon {
+        background-color: rgba(68, 55, 45, 0.2);
+    }
+
+    .details-list__label {
+        font-size: 10px;
+        line-height: 12px;
+        color: rgba(255, 255, 255, 0.702);
+    }
+
+    .details-list__value {
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+
+}
