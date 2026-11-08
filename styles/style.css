@@ -1395,4 +1395,59 @@ body {
     }
 
 
+
+    /*  gallery-section*/
+    .gallery-section {
+        padding: 12px 0 48px;
+    }
+
+    .gallery-section .container {
+        padding: 0 16px;
+    }
+
+    .gallery__title {
+        margin-bottom: 20px;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 27px;
+    }
+
+    /* 1, 4, 5 на всю ширину, 2 и 3 рядом */
+    .gallery__grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 220px 140px 180px 200px;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .gallery__item,
+    .gallery__item:nth-child(1),
+    .gallery__item:nth-child(4) {
+        border-radius: 16px;
+    }
+
+    .gallery__item:nth-child(2),
+    .gallery__item:nth-child(3) {
+        border-radius: 12px;
+    }
+
+    .gallery__item--tall {
+        grid-row: auto;
+        grid-column: span 2;
+    }
+
+    .gallery__item--wide {
+        grid-column: span 2;
+    }
+
+    .gallery__item:nth-child(5) {
+        order: 4;
+    }
+
+    .gallery__item:nth-child(4) {
+        order: 5;
+    }
+
+
+
 }
