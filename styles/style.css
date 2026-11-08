@@ -794,3 +794,215 @@ body {
     line-height: 24px;
     color: #555555;
 }
+
+
+/* один фон для contacts-section и footer-section */
+.bottom-wrapper {
+    max-width: 1576px;
+    margin: 0 auto 12px;
+    padding: 40px 0;
+    border-radius: 20px;
+    background-image: url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.contacts-section .container,
+.footer .container {
+    max-width: 1440px;
+    padding: 0;
+}
+
+
+/* contacts__inner */
+.contacts__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacts__info {
+    width: 640px;
+}
+
+.contacts__title {
+    margin-bottom: 24px;
+    font-family: 'Unbounded', sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 69px;
+    color: #ffffff;
+}
+
+.contacts__description {
+    width: 520px;
+    margin-bottom: 48px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px;
+    color: #d1d5db;
+}
+
+.contacts__button-wrapper {
+    display: flex;
+}
+
+.contacts__button {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 8px 8px 8px 32px;
+    border-radius: 40px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.251);
+    font-family: 'Unbounded', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+.contacts__button-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    border-radius: 22px;
+    background-color: #1a1a1a;
+}
+
+.contacts__button-icon img,
+.contacts__button-icon svg {
+    display: block;
+    width: 18px;
+    height: 18px;
+}
+
+.contacts__details {
+    width: 500px;
+}
+
+.contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    list-style: none;
+}
+
+.contacts-list__item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 19px;
+    border: 1px solid rgba(255, 255, 255, 0.149);
+    border-radius: 24px;
+    background-color: rgba(255, 255, 255, 0.102);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.contacts-list__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    background-color: rgba(255, 255, 255, 0.102);
+}
+
+.contacts-list__icon img,
+.contacts-list__icon svg {
+    display: block;
+    width: 22px;
+    height: 22px;
+}
+
+.contacts-list__text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.contacts-list__label {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.702);
+}
+
+.contacts-list__value {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #ffffff;
+}
+
+
+/* footer */
+.footer {
+    margin-top: 78px;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 39px;
+    border-top: 1px solid rgba(255, 255, 255, 0.149);
+}
+
+.footer__copyright {
+    width: 320px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: rgba(255, 255, 255, 0.702);
+}
+
+.footer__nav-list {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.footer__nav-link {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer__social-list {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+}
+
+.footer__social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid rgba(255, 255, 255, 0.149);
+    border-radius: 22px;
+    background-color: rgba(255, 255, 255, 0.102);
+}
+
+.footer__social-icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
