@@ -82,12 +82,34 @@ body {
     text-decoration: none;
 }
 
+.hero-nav__link:hover {
+    color: #44372d;
+    padding: 0 12px;
+    margin: 0 -13px;
+    border-radius: 41px;
+    height: 43px;
+    background-color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    background-color: rgba(255, 255, 255, 0.16);
+}
+
 .hero-nav__link--active {
     padding: 0 12px;/*?*/
     border-radius: 41px;
     background-color: #ffffff;
     color: #44372d;
 }
+
+.hero-nav__link--active:hover {
+    color: #44372d;
+    padding: 0 12px;
+    margin: 0;
+    border-radius: 41px;
+    border: none;
+    height: 43px;
+    background-color: #ffffff;
+} 
+
 
 .hero-header__btn,
 .hero-card__btn {
@@ -110,6 +132,14 @@ body {
     background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.024), rgba(255, 255, 255, 0));
     /* background-image: linear-gradient(91.92deg, rgba(255, 255, 255, 0.024) 6.07%, rgba(255, 255, 255, 0) 98.11%); */
     /*можно добавить блюр, как в другой карточке*/
+}
+
+.hero-header__btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.hero-card__btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 /* белый круг где стрелка*/
@@ -357,6 +387,11 @@ body {
     box-shadow: 0 10px 26px -10px rgba(0, 0, 0, 0.0706);
 }
 
+.tours-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 26px -10px rgba(0, 0, 0, 0.4);
+}
+
 .tours-card__img {
     display: block;
     width: 100%;
@@ -472,6 +507,12 @@ body {
     display: block;
     width: 18px;/*width: 14px;*/
     height: 22.62px;/*height: 18px;*/
+}
+
+.tours-card__button:hover {
+    color: #6c5748;
+    transform: translateY(3px);
+    /* background: linear-gradient(210deg, #ffffff, #fff6f0); */
 }
 
 
@@ -719,10 +760,14 @@ body {
     background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.024), rgba(255, 255, 255, 0));
     font-family: 'Unbounded', sans-serif;
     font-size: 16px;
-    font-weight: 200;
+    font-weight: 300;
     line-height: 19px;
     color: #3d3c3c;
     text-decoration: none;
+}
+
+.booking-photo__btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .booking-steps {
@@ -864,6 +909,11 @@ body {
     text-decoration: none;
 }
 
+.contacts__button:hover{
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
 .contacts__button-icon {
     display: flex;
     justify-content: center;
@@ -984,6 +1034,20 @@ body {
     text-decoration: none;
 }
 
+.footer__nav-link:hover {
+    display: flex;
+    align-items: center;
+    height: 43px;
+    padding: 0 12px;
+    margin: -23px -13px 0;
+    color: #44372d;
+    border-radius: 41px;
+    background-color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    background-color: rgba(255, 255, 255, 0.16);
+    transform: translateY(11px);
+}
+
 .footer__social-list {
     display: flex;
     gap: 12px;
@@ -1000,6 +1064,11 @@ body {
     border-radius: 22px;
     background-color: rgba(255, 255, 255, 0.102);
 }
+
+.footer__social-link:hover {
+    opacity: 0.7;
+}
+
 
 .footer__social-icon {
     display: block;
